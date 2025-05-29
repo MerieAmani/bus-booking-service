@@ -1,75 +1,47 @@
 # Bus Booking Service
 
-A command-line bus booking system built with Python and SQLAlchemy. This project allows users to register, log in, and manage buses, routes, trips, bookings, and payments.
+A simple command-line bus booking system built with Python and SQLAlchemy.
 
 ## Features
 
-- **User Authentication:** Register and log in securely with hashed passwords.
-- **Bus Management:** (Planned) Add, update, and list buses.
-- **Route Management:** Add, list, update, and delete routes.
-- **Trip Scheduling:** Schedule trips, assign buses, and manage seat availability.
-- **Booking Operations:** (Planned) Book seats for trips.
-- **Payment Processing:** Record and update payments for bookings.
-- **Simple CLI Interface:** Easy-to-use text-based menus.
+- Register and log in with a username and password
+- Manage buses, routes, trips, bookings, and payments
+- Easy-to-use text menus
 
-## Getting Started
+## Requirements
 
-### Prerequisites
-
-- Python 3.8+
+- Python 3.8 or newer
 - pip
 
-### Installation
+## Installation
 
-1. **Clone the repository:**
+1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/bus-booking-service.git
+   git clone https://github.com/MerieAmani/bus-booking-service.git
    cd bus-booking-service
    ```
 
-2. **Install dependencies:**
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-   If you don't have a `requirements.txt`, install the essentials:
-   ```bash
-   pip install sqlalchemy passlib
-   ```
+## Usage
 
-3. **Set up the database:**
-   - The database will be created automatically on first run if using SQLite.
-   - For other databases, configure `database.py` accordingly.
-
-### Running the Application
-
+Run the app:
 ```bash
 python main.py
 ```
+Follow the prompts to register, log in, and use the system.
 
-Follow the on-screen prompts to register, log in, and use the system.
-
-## Project Structure
+## Project Files
 
 ```
 bus-booking-service/
-├── main.py           # Main CLI application
-├── models.py         # SQLAlchemy models
-├── database.py       # Database connection/session
-├── requirements.txt  # Python dependencies
+├── main.py           # Main application
+├── models.py         # Database models
+├── database.py       # Database setup
+├── requirements.txt  # Dependencies
 └── README.md         # This file
 ```
 
-## Notes
-
-- Some features (bus and booking management) are placeholders and can be extended.
-- Passwords are securely hashed using `passlib`.
-- Designed for educational/demo purposes.
-
-## Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-MIT License
