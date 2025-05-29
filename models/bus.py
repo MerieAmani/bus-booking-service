@@ -13,7 +13,7 @@ class Bus(Base):
     
     trips = relationship("Trip", back_populates="bus")
 
-    # CRUD Operations
+
     @classmethod
     def create(cls, db: Session, number_plate: str, model: str, capacity: int):
         bus = cls(

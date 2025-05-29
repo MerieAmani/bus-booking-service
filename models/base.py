@@ -44,7 +44,6 @@ class BaseMixin:
         db.commit()
         db.commit()
 
-# Import all SQLAlchemy types for convenience
 from sqlalchemy import (
     String, 
     DateTime, 

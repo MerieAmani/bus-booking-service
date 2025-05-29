@@ -17,7 +17,6 @@ class Booking(Base):
     trip = relationship("Trip", back_populates="bookings")
     payment = relationship("Payment", back_populates="booking")
 
-    # CRUD Operations
     @classmethod
     def create(cls, db: Session, user_id: int, trip_id: int, seat_number: int, status: str = 'confirmed'):
         booking = cls(

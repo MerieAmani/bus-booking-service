@@ -14,7 +14,6 @@ class Route(Base):
     
     trips = relationship("Trip", back_populates="route")
 
-    # CRUD Operations
     @classmethod
     def create(
         cls,

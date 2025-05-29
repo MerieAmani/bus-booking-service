@@ -18,7 +18,6 @@ class Trip(Base):
     bus = relationship("Bus", back_populates="trips")
     bookings = relationship("Booking", back_populates="trip")
 
-    # CRUD Operations
     @classmethod
     def create(cls, db: Session, route_id: int, bus_id: int, departure_time: datetime, 
                arrival_time: datetime, available_seats: int):

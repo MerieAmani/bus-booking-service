@@ -14,7 +14,6 @@ class Payment(Base):
     
     booking = relationship("Booking", back_populates="payment")
 
-    # CRUD Operations
     @classmethod
     def create(cls, db: Session, booking_id: int, amount: float, status: str = 'pending', method: Optional[str] = None):
         payment = cls(
